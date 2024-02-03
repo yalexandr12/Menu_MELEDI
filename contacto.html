@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú del Restaurante MELEDI</title>
+  <!-- Iconos de redes sociales -->
+
+  <!-- Agrega el enlace a la hoja de estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Agrega el enlace a la fuente Jetbrains Mono -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jetbrains+Mono:wght@400&display=swap">
+  <!-- Agrega el enlace a Font Awesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Estilo de letra Jetbrains Mono para todo, excepto el título */
+    body, p, h2 {
+      font-family: 'Jetbrains Mono', monospace;
+    }
+
+    /* Estilo de letra italiano para el título del restaurante */
+    h1 {
+      font-family: 'Dancing Script', Italiana;
+    }
+
+    /* Estilo para el recuadro con bordes naranjas */
+    .menu-section {
+      border-top: 2px solid #FAA96E;
+      border-radius: 0px;
+      padding: 2px;
+      margin-top: 20px;
+    }
+
+    .menu-section2 {
+      border: 2px solid #FAA96E;
+      border-radius: 0px;
+      padding: 15px;
+      margin-top: 20px;
+      position: relative; /* Agregamos position relative para posicionar el texto Menú */
+    }
+
+    /* Línea naranja entre secciones */
+    .section-divider {
+      border-bottom: 2px solid #FAA96E;
+      margin-bottom: 15px;
+    }
+
+    /* Estilo para el recuadro con el texto Menú */
+    .menu-title {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 0 10px;
+      font-size: 35px; /* Ajustamos el tamaño de fuente */
+      font-weight: normal; /* Quitamos la negrita */
+    }
+
+    /* Estilo para centrar las palabras Platillos, Ensaladas, Postres, Bebidas */
+    .menu-category {
+      text-align: center;
+    }
+
+    /* Estilo para el precio a la derecha */
+    .menu-price {
+      text-align: right;
+    }
+
+    /* Estilo para el texto "Ingresar platillo" y "$100" */
+    .menu-entry {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Estilo para los iconos de redes sociales */
+    /* Estilo para los iconos de redes sociales */
+    .social-icons {
+    position: relative;
+    bottom: 10px;
+    left: 10px; /* Cambiamos 'left' a 'right' para alinear a la derecha */
+    }
+
+    .social-icons a {
+    margin-right: 10px;
+    color: #FAA96E;
+    font-size: 24px;
+    }
+    a {
+    color: black !important;
+    text-decoration: none !important;
+    }
+
+    /* Estilo para los enlaces cuando se les pasa el mouse encima */
+    a:hover {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Nombre del restaurante -->
+  <h1 class="mt-5 text-center">MELEDI</h1>
+
+  <!-- Iconos de redes sociales -->
+  <div class="social-icons">
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <div class="menu-section d-flex justify-content-between">
+    <!-- Enlace a Conocenos.html -->
+    <a href="index.html" class="btn btn-link">Menú</a>
+    <!-- Enlace a Conocenos.html -->
+    <a href="conocenos.html" class="btn btn-link">Conocenos</a>
+    <!-- Enlace a Contacto.html -->
+    <a href="contacto.html" class="btn btn-link">Contacto</a>
+    <!-- Enlace a Eventos.html -->
+    <a href="eventos.html" class="btn btn-link">Eventos</a>
+  </div>
+
+  <!-- Línea naranja entre secciones -->
+  <div class="section-divider"></div>
+
+  <!-- Sección 2 -->
+  <div class="menu-section2">
+    <div class="menu-title">Contacto</div> <!-- Agregamos el recuadro con el texto Menú -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- Agregado el texto proporcionado -->
+    <p class="text-center"><strong>hola@meledi.mx</strong></p>
+    
+    <p class="text-center"><strong>eventos@meledi.mx</strong></p>
+    
+    <p class="text-center"><strong>bolsadetrabajo@meledi.mx</strong></p>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Línea naranja entre secciones -->
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Puedes agregar más secciones según sea necesario -->
+
+</div>
+
+<!-- Agrega el enlace a los scripts de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Agrega el enlace a Font Awesome para los íconos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+</body>
+</html>

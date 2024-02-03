@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menú del Restaurante MELEDI</title>
+  <!-- Iconos de redes sociales -->
+    
+  <!-- Agrega el enlace a la hoja de estilo de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Agrega el enlace a la fuente Jetbrains Mono -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jetbrains+Mono:wght@400&display=swap">
+  <!-- Agrega el enlace a Font Awesome para los íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    /* Estilo de letra Jetbrains Mono para todo, excepto el título */
+    body, h2 {
+      font-family: 'Jetbrains Mono', monospace;
+    }
+
+    p {
+      font-family: 'Jetbrains Mono', monospace;
+      font-size: 15px;
+    }
+
+    /* Estilo de letra italiano para el título del restaurante */
+    h1, strong {
+      font-family: 'Dancing Script', Italiana;
+    }
+
+    /* Estilo para el recuadro con bordes naranjas */
+    .menu-section {
+      border-top: 2px solid #FAA96E;
+      border-radius: 0px;
+      padding: 2px;
+      margin-top: 20px;
+    }
+
+    .menu-section2 {
+      border: 2px solid #FAA96E;
+      border-radius: 0px;
+      padding: 15px;
+      margin-top: 20px;
+      position: relative; /* Agregamos position relative para posicionar el texto Menú */
+    }
+
+    /* Línea naranja entre secciones */
+    .section-divider {
+      border-bottom: 2px solid #FAA96E;
+      margin-bottom: 15px;
+    }
+
+    /* Estilo para el recuadro con el texto Menú */
+    .menu-title {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 0 10px;
+      font-size: 35px; /* Ajustamos el tamaño de fuente */
+      font-weight: normal; /* Quitamos la negrita */
+    }
+
+    /* Estilo para centrar las palabras Platillos, Ensaladas, Postres, Bebidas */
+    .menu-category {
+      text-align: center;
+    }
+
+    /* Estilo para el precio a la derecha */
+    .menu-price {
+      text-align: right;
+    }
+
+    /* Estilo para el texto "Ingresar platillo" y "$100" */
+    .menu-entry {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer; /* Cambiamos el cursor al hacer clic */
+    }
+
+    /* Estilo para los iconos de redes sociales */
+    .social-icons {
+    position: relative;
+    bottom: 10px;
+    left: 10px; /* Cambiamos 'left' a 'right' para alinear a la derecha */
+    }
+
+    .social-icons a {
+    margin-right: 10px;
+    color: #FAA96E;
+    font-size: 24px;
+    }
+
+    a {
+      color: black !important;
+      text-decoration: none !important;
+    }
+
+    /* Estilo para los enlaces cuando se les pasa el mouse encima */
+    a:hover {
+      color: black !important;
+      text-decoration: underline !important;
+    }
+    
+    .divider-line {
+      border-top: 1px solid #FAA96E; /* Línea superior con color gris */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra debajo de la línea */
+      margin: 15px 0; /* Espaciado superior e inferior */
+  }
+  /* Estilo para el texto de beneficios nutricionales en verde claro */
+  /* Estilo para el texto de beneficios nutricionales en verde claro */
+  #beneficiosData ul {
+    list-style-type: none; /* Elimina las viñetas de la lista */
+    padding: 0; /* Elimina el espacio de relleno predeterminado de la lista */
+  }
+
+  /* Estilo para el texto de beneficios nutricionales en verde claro */
+  #beneficiosData li {
+    color: #4CAF50; /* Puedes ajustar el código de color según tus preferencias */
+  }
+</style>
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Nombre del restaurante -->
+  <h1 class="mt-5 text-center">MELEDI</h1>
+  
+  <!-- Iconos de redes sociales -->
+  <div class="social-icons">
+    <a href=""><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-tiktok"></i></a>
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+  </div>
+
+  <!-- Sección 1 -->
+  <div class="menu-section d-flex justify-content-around">
+    <!-- Enlace a Conocenos.html -->
+    <a href="index.html" class="btn btn-link">Menú</a>
+    <!-- Enlace a Conocenos.html -->
+    <a href="conocenos.html" class="btn btn-link">Conocenos</a>
+    <!-- Enlace a Contacto.html -->
+    <a href="contacto.html" class="btn btn-link">Contacto</a>
+    <!-- Enlace a Eventos.html -->
+    <a href="eventos.html" class="btn btn-link">Eventos</a>
+  </div>
+
+  <!-- Línea naranja entre secciones -->
+  <div class="section-divider"></div>
+
+  <!-- Sección 2 -->
+  <div class="menu-section2">
+    <div class="menu-title">Menú</div> <!-- Agregamos el recuadro con el texto Menú -->
+    <br>
+    <br>
+
+
+    <!-- Línea naranja entre secciones -->
+    <div class="section-divider"></div>
+
+    <!-- Bebidas -->
+    <div class="menu-category">
+      <h3>Bebidas</h3>
+      <!-- Texto "Ingresar platillo" y "$100" -->
+      <div class="menu-entry">
+        <p> </p>
+        <p class="menu-price">Chico  -  Grande</p>
+        
+      </div>
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Espresso" 
+      data-ingredients="Cafe obtenido por proceso de filtrado de nuestra mezcla de la casa con un ratio de 1.16." data-image="cafe-americano.jpg" data-beneficios ="
+      Aumento de Energía.
+      Antioxidantes.
+      Mejora del Estado de Ánimo.
+      Ayuda en la Quema de Grasas.
+      Reducción del Riesgo de Enfermedades.
+      Mejora el Rendimiento Físico.
+      ">
+        <p>Café americano</p>
+        <p class="menu-price">$100  -  -    $150</p>
+      </div>
+
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Café americano"
+      data-ingredients="Café obtenido por una maceración en frío de café utilizando nuestra selección de 
+      granos de proceso natural usando un ratio de 1:8 lo que nos podrá permitir degustar las notas afrutadas y dulces de este tipo de cafe." data-image="coul.jpg" data-beneficios ="
+      Menos Acidez.
+      Mayor Cantidad de Cafeína.
+      Menos Azúcar y Calorías
+      Mantiene sus Propiedades Antioxidantes.
+      ">
+        <p>Cold Brew</p>
+        <p class="menu-price">$100  -  -    $150</p>
+      </div>
+      
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Capuchino" data-ingredients="Café obtenido mezclando café expresso con la leche de su 
+      preferencia: Entera, Deslactosada, Light,  Coco, Almendras en un ratio de 1:7." data-image="capuchino+.jpg" 
+      data-beneficios ="
+      Aporte de Energía.
+      Calcio y Proteínas.
+      Reducción del Riesgo de Enfermedades.
+      ">
+        <p>Capuchino</p>
+        <p class="menu-price">$100  -  -    $150</p>
+        
+      </div>
+      
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Frappé" data-ingredients="Café obtenido triturando hielo con café expreso, leche y un toque de
+       leche condensada en un ratio de 1:8 dandonos una textura de granizado muy agradable para los días de calor." data-image="frappe.jpg" data-beneficios ="
+       Opción Baja en Caloría.
+       Dulzura Controlada.
+       Cafeína para el Impulso de Energía.
+       Experiencia Placentera.
+      ">
+        <p>Frappé</p>
+        <p class="menu-price">$100  -  -    $150</p>
+        
+      </div>
+      
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Tisana" data-ingredients="Infusión de frutas de temporada deshidratadas
+      " data-image="tisana.jpg" data-beneficios ="
+      Libre de Cafeína.
+      Hidratación.
+      Propiedades Herbales.
+      Ayuda en la Relajación.
+      Bajas en Calorías.
+     ">
+        <p>Tisana</p>
+        <p class="menu-price">$100  -  -    $150</p>
+        
+      </div>
+      
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Chocolate con leche" data-ingredients="Chocolate tradicional con la leche de su 
+      preferencia." data-image="choco.jpg" data-image="tisana.jpg" data-beneficios ="
+      Fuente de Energía.
+      Aporte de Calcio.
+      Antioxidantes del Cacao.
+      Eleva el Estado de Ánimo.
+     ">
+        <p>Chocolate con leche</p>
+        <p class="menu-price">$100  -  -    $150</p>
+        
+      </div>
+
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Agua del dia" data-ingredients="Horchata, Limón pepino y chia, Jamaica, Guayaba, 
+      Sandia, Melón, ETC " data-image="aguas.jpg" data-beneficios ="
+      Hidratación.
+     ">
+        <p>Agua del dia</p>
+        <p class="menu-price">$100  -  -    $150</p>
+        
+      </div>
+      
+      
+      
+      <!-- Agrega más bebidas con datos similares -->
+    </div>
+
+    <div class="section-divider"></div>
+    <!-- Platillos -->
+    <div class="menu-category">
+      <h3>Snacks</h3>
+      <!-- Texto "Ingresar platillo" y "$100" -->
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Sandwich de huevo" data-ingredients="Huevo, Pan, Verduras" data-image="sandwich.jpg" data-beneficios ="
+      Calorías: 600
+      Proteínas: 25g
+      Grasas: 35g
+      Carbohidratos: 50g
+      Fibra: 6g
+      Azúcares: 4g
+      ">
+        <p>Club sandwich</p>
+        <p class="menu-price">$80</p>
+      </div>
+      
+
+    <!-- Línea naranja entre secciones -->
+    <div class="section-divider"></div>
+
+    <!-- Ensaladas -->
+    <div class="menu-category">
+      <h3>Ensaladas</h3>
+      <!-- Texto "Ingresar platillo" y "$100" -->
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Ensalada griega" data-ingredients="Lechuga, Tomate, Pepino, Aceitunas, Queso feta" data-image="ensalda.jpg">
+        <p>Ensalada de pollo</p>
+        <p class="menu-price">$170</p>
+      </div>
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Ensalada Cesar" data-ingredients="Lechuga, Pollo, Crutones, Queso parmesano" data-image="ensalada-queso.jpg">
+        <p>Ensalada de queso asado</p>
+        <p class="menu-price">$180</p>
+      </div>
+    </div>
+
+
+
+    <!-- Línea naranja entre secciones -->
+    <div class="section-divider"></div>
+
+
+
+    <!-- Postres -->
+    <div class="menu-category">
+      <h3>Panadería casera</h3>
+      <!-- Texto "Ingresar platillo" y "$100" -->
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Croissant" data-ingredients="Harina, Mantequilla, Azúcar" data-image="croasa.jpg">
+        <p>Croissant de mantequilla</p>
+        <p class="menu-price">$40</p>
+      </div>
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Rollos" data-ingredients="Harina, Azúcar, Canela" data-image="galleta.jpg">
+        <p>Galleta de chocolate</p>
+        <p class="menu-price">$60</p>
+      </div>
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Pan dulce temporada" data-ingredients="Harina, Azúcar, Frutas" data-image="aranda.jpg">
+        <p>Galleta de arandanos</p>
+        <p class="menu-price">$70</p>
+      </div>
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Pan dulce temporada" data-ingredients="Harina, Azúcar, Frutas" data-image="mufi.jpg">
+        <p>Muffin de chocolate</p>
+        <p class="menu-price">$60</p>
+      </div>
+      <div class="menu-entry" data-toggle="modal" data-target="#ingredientModal" data-title="Pan dulce temporada" data-ingredients="Harina, Azúcar, Frutas" data-image="tarta.jpg">
+        <p>Tarta tipo manhattan </p>
+        <p class="menu-price">$70</p>
+      </div>
+    </div>
+
+    <!-- Línea naranja entre secciones -->
+    <div class="section-divider"></div>
+  </div>
+
+  <!-- Puedes agregar más secciones según sea necesario -->
+
+</div>
+
+<!-- Modal para mostrar ingredientes y beneficios nutrimentales -->
+<div class="modal fade text-center" id="ingredientModal" tabindex="-1" role="dialog" aria-labelledby="ingredientModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 class="modal-title text-center"><strong>Detalles del Platillo</strong></h3>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <!-- Imagen del platillo -->
+        <img id="ingredientImage" src="" alt="Imagen del platillo" style="max-width: 100%; margin-bottom: 15px;">
+
+        <!-- Línea con sombra -->
+        <div class="divider-line"></div>
+
+        <!-- Sección de ingredientes -->
+        <div class="ingredient-section text-center">
+          <h4><strong>Ingredientes</strong></h4>
+          <div id="ingredientContent"></div>
+        </div>
+
+        <!-- Línea con sombra -->
+        <div class="divider-line"></div>
+
+        <!-- Sección de beneficios nutricionales -->
+        <div class="benefits-section text-center">
+          <h4><strong>Beneficios</strong></h4>
+          <div id="beneficiosData">
+            <!-- Aquí puedes agregar las etiquetas HTML necesarias para organizar la información -->
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Resto de tu código -->
+
+<!-- Script personalizado para actualizar el contenido del modal -->
+<script>
+ $(document).ready(function() {
+  $('.menu-entry').click(function() {
+    var title = $(this).data('title');
+    var ingredients = $(this).data('ingredients');
+    var imageUrl = $(this).data('image');
+    var beneficios = $(this).data('beneficios');
+
+    // Actualiza la imagen
+    $('#ingredientImage').attr('src', imageUrl);
+
+    // Actualiza la sección de ingredientes
+    $('#ingredientContent').text(ingredients);
+
+    // Actualiza la sección de beneficios nutricionales
+    var beneficiosArray = beneficios.split('\n'); // Divide los beneficios en un array usando saltos de línea
+    var beneficiosHTML = ''; // Variable para almacenar el HTML de beneficios nutricionales
+
+    // Crea una lista desordenada para mostrar los beneficios
+    beneficiosArray.forEach(function(beneficio) {
+      beneficiosHTML += '<li>' + beneficio + '</li>';
+    });
+
+    // Asigna el HTML creado al contenedor de beneficios nutricionales
+    $('#beneficiosData').html('<ul>' + beneficiosHTML + '</ul>');
+
+    // Muestra el modal
+    $('#ingredientModal').modal('show');
+  });
+});
+
+</script>
+
+
+
+<!-- Agrega el enlace a los scripts de Bootstrap y jQuery -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- Agrega el enlace a Font Awesome para los íconos -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+
+<!-- Script personalizado para actualizar el contenido del modal -->
+<script>
+ $(document).ready(function() {
+    $('.menu-entry').click(function() {
+      var title = $(this).data('title');
+      var ingredients = $(this).data('ingredients');
+      var imageUrl = $(this).data('image');
+      var beneficios = $(this).data('beneficios');
+
+      // Actualiza la imagen
+      $('#ingredientImage').attr('src', imageUrl);
+
+      // Actualiza la sección de ingredientes
+      $('#ingredientContent').text(ingredients);
+
+      // Actualiza la sección de beneficios nutricionales
+      var beneficiosArray = beneficios.split('\n'); // Divide los beneficios en un array usando saltos de línea
+      var beneficiosHTML = ''; // Variable para almacenar el HTML de beneficios nutricionales
+
+      // Crea una lista desordenada para mostrar los beneficios
+      beneficiosArray.forEach(function(beneficio) {
+        beneficiosHTML += '<li>' + beneficio + '</li>';
+      });
+
+      // Asigna el HTML creado al contenedor de beneficios nutricionales
+      $('#beneficiosData').html('<ul>' + beneficiosHTML + '</ul>');
+
+      // Muestra el modal
+      $('#ingredientModal').modal('show');
+    });
+  });
+</script>
+
+</body>
+</html>
